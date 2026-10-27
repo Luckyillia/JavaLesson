@@ -9,6 +9,7 @@ public class Main {
 //        tab.TablicaPrint();
 //        Interfece.main(args);
 //        Kalkulator.main(args);
+        INF04.main(args);
 //        int a = 0, b = 0;
 //        System.out.println("Podaj dwie liczby calkowite dodatnich: ");
 //        try{

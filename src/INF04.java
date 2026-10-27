@@ -20,4 +20,14 @@ public class INF04 {
     private JPanel namePanel;
     private JPanel surnamePanel;
     private JPanel eyePanel;
+
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("Wprowadzenie danych do paszportu. Wykonał: 00000000000");
+        frame.setContentPane(new INF04().MainPanel);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.pack();
+        frame.setSize(1200,600);
+        frame.setLocationRelativeTo(null);
+        frame.setVisible(true);
+    }
 }
