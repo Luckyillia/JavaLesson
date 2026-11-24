@@ -1,3 +1,5 @@
+package KGebicz;
+
 public class Sort {
     private int[] arr;
     public Sort(int n){

@@ -1,16 +1,20 @@
+import KGebicz.SearchWithSentinel;
+import KGebicz.Sort;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Podaj liczbę elementów (5-50): ");
+        System.out.print("Podaj liczbę elementów (50<): ");
         try{
             int n = sc.nextInt();
-            if(n > 50 || n < 5){
+            if(n < 50){
                 throw new RuntimeException("Podanna liczba jest poza zakresem");
             }
-            Sort s1 = new Sort(n);
+            //Sort s1 = new Sort(n);
+            SearchWithSentinel s2 = new SearchWithSentinel(n,sc);
         }  catch (InputMismatchException e){
             System.out.println("Musi byc podana liczba calkowita");
         } catch (RuntimeException e) {
